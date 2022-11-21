@@ -45,8 +45,6 @@ X1 %>% mutate(設施="清真寺") -> X1_3
 X1<-rbind(X1_1,X1_2)
 X1<-rbind(X1,X1_3)
 
-colnames(X1)[47]
-
 ggplot(data=X1,mapping=aes(x=距離, y=設施))+
   geom_point(shape=20,alpha=0.5,mapping=aes(color=距離,size=數量))+
   geom_point(#shape=20,#size=1,
